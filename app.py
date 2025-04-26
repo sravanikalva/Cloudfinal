@@ -327,7 +327,7 @@ def get_dashboard_data():
     query = """
         SELECT 
             h.HSHD_NUM,
-            t.BASKET_NUM, t.PURCHASE, t.PRODUCT_NUM, p.DEPARTMENT, p.COMMODITY, t.SPEND, t.UNITS, t.STORE_R, t.WEEK_NUM, t.YEAR, h.L,
+            t.BASKET_NUM, t.PURCHASE_DATE, t.PRODUCT_NUM, p.DEPARTMENT, p.COMMODITY, t.SPEND, t.UNITS, t.STORE_R, t.WEEK_NUM, t.YEAR, h.L,
             h.AGE_RANGE, h.MARITAL,
             h.INCOME_RANGE, h.HOMEOWNER, h.HSHD_COMPOSITION, h.HH_SIZE, h.CHILDREN
         FROM 
@@ -354,7 +354,7 @@ def get_dashboard_data():
     
     # Explicitly define the column names in the order of the SQL query
     columns = [
-        'HSHD_NUM', 'BASKET_NUM', 'PURCHASE', 'PRODUCT_NUM', 'DEPARTMENT', 'COMMODITY', 'SPEND', 'UNITS', 'STORE_R', 'WEEK_NUM', 'YEAR',
+        'HSHD_NUM', 'BASKET_NUM', 'PURCHASE_DATE', 'PRODUCT_NUM', 'DEPARTMENT', 'COMMODITY', 'SPEND', 'UNITS', 'STORE_R', 'WEEK_NUM', 'YEAR',
         'L', 'AGE_RANGE', 'MARITAL', 'INCOME_RANGE', 'HOMEOWNER', 'HSHD_COMPOSITION', 'HH_SIZE', 'CHILDREN'
     ]
     
