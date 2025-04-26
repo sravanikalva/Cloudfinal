@@ -111,13 +111,13 @@
 </head>
 <body>
     <div class="button-container text-right mb-4">
-        <a href="{{ url_for('home') }}" class="btn btn-primary mr-2">
+        <a href="{{ url_for('home') }}" class="btn btn-info mr-2">
             <i class="fas fa-chart-line mr-2"></i>home
         </a>
-        <a href="{{ url_for('demographicsandengagement') }}" class="btn btn-primary mr-2">
+        <a href="{{ url_for('demographicsandengagement') }}" class="btn btn-info mr-2">
             <i class="fas fa-chart-bar mr-2"></i>Dashboards
         </a>
-        <a href="{{ url_for('uploaddatasets') }}" class="btn btn-primary">
+        <a href="{{ url_for('uploaddatasets') }}" class="btn btn-info">
             <i class="fas fa-chart-bar mr-2"></i>Upload
         </a>
         <a href="{{ url_for('logout') }}" class="btn btn-danger">
@@ -128,7 +128,7 @@
     <div>
         <h2>Model Training</h2>
         <div id="existing_model_info"></div>
-    <button onclick="trainModel()" id="trainButton" class="btn btn-primary">
+    <button onclick="trainModel()" id="trainButton" class="btn btn-info">
         <i class="fas fa-cogs mr-2"></i>Train New Model
     </button>
     <div id="training_status"></div>
